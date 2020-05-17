@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 /**
  * @author kas
  */
@@ -14,5 +16,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class ValidateBeerOrderResponse {
 
-    Boolean isValid;
+    private UUID orderId;
+    private Boolean isValid;
 }
