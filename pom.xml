@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.12</lombok.version>
         <jackson.version>2.10.3</jackson.version>
         <jakarta.validation.version>2.0.2</jakarta.validation.version>
