@@ -9,16 +9,18 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * payload for jms
  * @author kas
  */
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
-public class ValidateBeerOrderRequest implements Serializable {
+public class AllocationOrderResponse implements Serializable {
 
-    static final long serialVersionUID = 8642276394226869627L;
+    static final long serialVersionUID = -4990248116563031229L;
 
-    BeerOrderDto beerOrderDto;
+    private BeerOrderDto beerOrderDto;
+    private Boolean allocationError;
+    private Boolean inventoryPending;
+
 }
